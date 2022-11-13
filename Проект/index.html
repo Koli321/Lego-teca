@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="dk_fouc has-js">
+
+<head>
+    <title>ЛЕГОТЕКА</title>
+    <meta charset="utf-8">
+    <link href="flatui/css/bootstrap.css" rel="stylesheet">
+    <link href="flatui/css/flat-ui.css" rel="stylesheet">
+    <link href="colorpicker/css/colorpicker.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="instructions">
+        <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+            data-ad-client="ca-pub-0257528836788785" data-ad-slot="2254758801"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <div class="dk_container actionsMenu dk_shown dk_theme_default" id="dk_container_undefined" tabindex="1">
+            <a class="dk_toggle">
+                <span class="select-icon"></span>
+            </a>
+            <div class="dk_options" style="top:38px;">
+                :before
+                <ul class="dk_options_inner">
+                    <li class>
+                        ::marker
+                        <a data-dk-dropdown-value="viewInstructions">Смотреть инструкцию</a>
+                    </li>
+                    <li class>
+                        ::marker
+                        <a data-dk-dropdown-value="reset">Сброс</a>
+                    </li>
+                </ul>
+            </div>
+
+            <select class="actionsMenu" value="Помощь" tabindex="1" style="display: none;">
+                <option value="viewInstructions">ИНСТРУКЦИЯ</option>
+                <option value="reset">Сброс</option>
+            </select>
+        </div>
+        <div class="share mrl">
+            <ul>
+                <li>
+                    <label class="share-label" for="share-toggle2">ПОЛЕ</label>
+                    <div data-action="showGrid" class="toggle">
+                        <label class="toggle-radio" for="share-toggle2">ДА</label>
+                        <input type="radio" name="share-toggles" id="share-toggle2" value="toggle1" checked="checked">
+                        <label class="toggle-radio" for="share-toggle1">НЕТ</label>
+                        <input type="radio" name="share-toggles" id="share-toggle1" value="toggle2">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="row color-container">
+            <div class="span3">
+                <div class="btn-group color-picker">
+                    <a class="btn btn-primary colorPickButton active" href="#" data-color="#2ecc71"><i data-color="0"
+                            class="color" style="background: rgb(46, 204, 113);"></i></a>
+                    <a class="btn btn-primary colorPickButton" href="#" data-color="#ff0000"><i data-color="1"
+                            class="color" style="background: rgb(255, 0, 0);"></i></a>
+                    <a class="btn btn-primary colorPickButton" href="#" data-color="#34495e"><i data-color="2"
+                            class="color" style="background: rgb(52, 73, 94);"></i></a>
+                    <a class="btn btn-primary colorPickButton" href="#" data-color="#e67e22"><i data-color="3"
+                            class="color" style="background: rgb(230, 126, 34);"></i></a>
+                    <a class="btn btn-primary colorPickButton" href="#" data-color="#ecf0f1"><i data-color="4"
+                            class="color" style="background: rgb(236, 240, 241);"></i></a>
+                    <a class="btn btn-primary colorAddButton" data-color="#000000" href="#"><i data-color="-1"
+                            class="colorAdd">++</i></a>
+                </div>
+            </div>
+        </div>
+        <div id="output"></div>
+    </div>
+    <div class="animationControls">
+        <div class="playback">
+            <span class="play-pause fui-play"></span>
+        </div>
+        <div class="sliderContainer">
+            <div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                aria-disabled="false">
+                <div class="ui-slider-range ui-widget-header ui-slider-range-min" style="width: 0%;"></div><a
+                    class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
+            </div>
+        </div>
+        <div class="addRemove">
+            <span class="plus-button fui-plus"></span>
+            <span class="minus-button fui-cross"></span>
+        </div>
+    </div>
+    <div id="welcome" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-header">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
+            <h3 class="instr">ИНСТРУКЦИЯ</h3>
+        </div>
+        <div class="modal-body">
+            <h4>ВСЕ ДЕТАЛИ</h4>
+            <div class="shag" class="span3 hello">
+                <p></p>
+                <p></p>
+                <p class="instrvse"><img src="img/instr/girafe/vse.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 1</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.1.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/1.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 2</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.1.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/2.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 3</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.1.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/3.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 4</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.2.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/4.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 5</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.2.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/5.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 6</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.3.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/6.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 7</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.4.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/7.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 8</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.3.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/8.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 9</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.4.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/9.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 10</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.2.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/10.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 11</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.1.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/11.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 12</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.3.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/12.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 13</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.4.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/13.png"></p>
+            </div>
+            <h4 class="nazv">ШАГ 14</h4>
+            <div class="shag" class="span3 hello">
+                <p><img class="instdet" src="img/instr/girafe/1.1.png"></p>
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/14.png"></p>
+            </div>
+            <hr></hr>
+            <h4 class="nazv">ИТОГ</h4>
+            <div class="shag" class="span3 hello">
+                <p></p>
+                <p></p>
+                <p class="instrpic"><img src="img/instr/girafe/itog.png"></p>
+            </div>
+            <div class="span3 hello">
+                <p></p>
+                <h4>Анимация</h4>
+                <p></p>
+                <p>Включите анимацию, необязательно создавать мульти-кадр.</p>
+                <p><img src="img/chix.gif" width="250"></p>
+                <!-- <p><a
+                        href="/redaktor/konstruktor3d/#C/2ecc713498db34495ee67e22ecf0f1cf9f9fffccccf0ff47e8e1cfede4e4f5bc6766bda3:A/fhihhachekhfachckhSfYeShaffShaffShVijSfahhSfahhSfahhYhSfffehdSfVijddfeYhYiYhachYhYiYhbeflThbdeiiSfahhSfahhSfahhSfYhShcbhSfahhSfahhSfahhSfahhSfahhSfahhSfeahhSfahhSfahhSfahhSfahhSfahhSfahhSfddhlafhSfahhYhSfahhSfachSfSfYhYhYhYhafjYhYcYhYheehfSfSfakiSfSfWhiYceifecihUhcefchhYfYfcffUhdkhhYfYfYfYfekehUhSheffhYhUfYfYfYfYfUhYiYfafeUhShYjYfYfejieYfYfefehYhYhchhYfYfchhYhcdfWhfahhehhfYhchdUfShUhShWfhUfeaieUfWhhWfhUffmhffUfcahUfXiehUfehhjYhYhYhYhedhfYhYhYhaheShShWieUfShfccfhUhcifUhfbciZSfaohSfehfhSfUfSheWhfShWffShdqflSfaWhSffpihbSfWfhSffbahlYffjifYUheeehYfchiUffdlfjShWffShXfflShaofShdecYSfWhhacfekhhacffkdhoSfafhSfYeYffjhhYSfceiUfUfYfejhhUh:A1/fhkihSfYeShaffShaffShVijSfahhSfahhSfahhYhSfffehdSfVijddfeYhYiYhachYhYiYhbeflThbdeiiSfahhSfahhSfahhSfYhShcbhSfahhSfahhSfahhSfahhSfahhSfahhSfeahhSfahhSfahhSfahhSfahhSfahhSfahhSfddhlafhSfahhYhSfahhSfachSfSfYhYhYhYhafjYhYcYhYheehfSfSfakiSfSfWhiYceifecihUhcefchhYfYfcffUhdkhhYfYfYfYfekehUhSheffhYhUfYfYfYfYfUhYiYfafeUhShYjYfYfejieYfYfefehYhYhchhYfYfchhYhcdfWhfahhehhfYhchdUfShUhShWfhUfeaieUfWhhWfhUffmhffUfcahUfXiehUfehhjYhYhYhYhedhfYhYhYhaheShShWieUfShfccfhUhcifUhfbciZYoSfYYdmadachekhfachdnkjUfeWhfUffqfhlaWffpihbUfdbalYffjifYUheeehYfchiUffdlfjUfVflaohedcfYhSfYfVhYYhcfhYhcfhYhedfjYfchfYfchfYfVfoYhfdndbYfUfYhephjYfUfYhVflYfaYdYf:A2/fhkihSfYeShaffShaffShVijSfahhSfahhSfahhYhSfffehdSfVijddfeYhYiYhachYhYiYhbeflThbdeiiSfahhSfahhSfahhSfYhShcbhSfahhSfahhSfahhSfahhSfahhSfahhSfeahhSfahhSfahhSfahhSfahhSfahhSfahhSfddhlafhSfahhYhSfahhSfachSfSfYhYhYhYhafjYhYcYhYheehfSfSfakiSfSfWhiYceifecihUhcefchhYfYfcffUhdkhhYfYfYfYfekehUhSheffhYhUfYfYfYfYfUhYiYfafeUhShYjYfYfejieYfYfefehYhYhchhYfYfchhYhcdfWhfahhehhfYhchdUfShUhShWfhUfeaieUfWhhWfhUffmhffUfcahUfXiehUfehhjYhYhYhYhedhfYhYhYhaheShShWieUfShfccfhUhcifUhfbciZYoaYfdmadachekhfachfdkfjUfdmcdUhaehUffdlfjUfflcfdYhcfhYhadjYfchfYfchfYfVfoYhfdndbYfUfYhephjYfUfYhVflYffdcdYYhVfoYffhhfYYfaelYfVfoYhaibYhcanYfchfYffphlbYhUfYfWifYffhdhlYh:A3/fhkihSfYeShaffShaffShVijSfahhSfahhSfahhYhSfffehdSfVijddfeYhYiYhachYhYiYhbeflThbdeiiSfahhSfahhSfahhSfYhShcbhSfahhSfahhSfahhSfahhSfahhSfahhSfeahhSfahhSfahhSfahhSfahhSfahhSfahhSfddhlafhSfahhYhSfahhSfachSfSfYhYhYhYhafjYhYcYhYheehfSfSfakiSfSfWhiYceifecihUhcefchhYfYfcffUhdkhhYfYfYfYfekehUhSheffhYhUfYfYfYfYfUhYiYfafeUhShYjYfYfejieYfYfefehYhYhchhYfYfchhYhcdfWhfahhehhfYhchdUfShUhShWfhUfeaieUfWhhWfhUffmhffUfcahUfXiehUfehhjYhYhYhYhedhfYhYhYhaheShShWieUfShfccfhUhcifUhfbciZYoSfYYdmadachekhfachfdkfjUfdmcdUhaehUffdlfjUfflcfdYhcfhYhadjYfchfYfchfYfVfoYhfihdYYhVfoYffknibUfVflaWffpihbUffYfflaohfdcfYYhadhYfdhfoYfajfYheiliYhdfhbYhUhYfaXdYhUfYfdhflYf:A4/fhihhachekhfachckhSfYeShaffShaffShVijSfahhSfahhSfahhYhSfffehdSfVijddfeYhYiYhachYhYiYhbeflThbdeiiSfahhSfahhSfahhSfYhShcbhSfahhSfahhSfahhSfahhSfahhSfahhSfeahhSfahhSfahhSfahhSfahhSfahhSfahhSfddhlafhSfahhYhSfahhSfachSfSfYhYhYhYhafjYhYcYhYheehfSfSfakiSfSfWhiYceifecihUhcefchhYfYfcffUhdkhhYfYfYfYfekehUhSheffhYhUfYfYfYfYfUhYiYfafeUhShYjYfYfejieYfYfefehYhYhchhYfYfchhYhcdfWhfahhehhfYhchdUfShUhShWfhUfeaieUfWhhWfhUffmhffUfcahUfXiehUfehhjYhYhYhYhedhfYhYhYhaheShShWieUfShfccfhUhcifUhfbciZSfaohSfehfhSfUfSheWhfShWffShdqflSfaWhSffpihbSfWfhSffbahlYffjifYUheeehYfchiUffdlfjShWffShXfflShaofShdecYSfWhhacfekhhacffkdhoSfafhSfYeYffjhhYSfceiUfUfYfejhhUh:A5/fhkihSfYeShaffShaffShVijSfahhSfahhSfahhYhSfffehdSfVijddfeYhYiYhachYhYiYhbeflThbdeiiSfahhSfahhSfahhSfYhShcbhSfahhSfahhSfahhSfahhSfahhSfahhSfeahhSfahhSfahhSfahhSfahhSfahhSfahhSfddhlafhSfahhYhSfahhSfachSfSfYhYhYhYhafjYhYcYhYheehfSfSfakiSfSfWhiYceifecihUhcefchhYfYfcffUhdkhhYfYfYfYfekehUhSheffhYhUfYfYfYfYfUhYiYfafeUhShYjYfYfejieYfYfefehYhYhchhYfYfchhYhcdfWhfahhehhfYhchdUfShUhShWfhUfeaieUfWhhWfhUffmhffUfcahUfXiehUfehhjYhYhYhYhedhfYhYhYhaheShShWieUfShfccfhUhcifUhfbciZSfaohSfchfUfeWhhUffqfflaWhfpifbUfeYhhUfVflaofdeeYachajfaehcjeUhacfekhhacffkdhoYfVhYeeifUfaihUhaeeYfchfYfUiYhdfdoShYhSfeifjYhdfiYYhUfYffkmdjYfUfYheWhjYhUfYffqfdlYfaYjYf:A6/fhkihSfYeShaffShaffShVijSfahhSfahhSfahhYhSfffehdSfVijddfeYhYiYhachYhYiYhbeflThbdeiiSfahhSfahhSfahhSfYhShcbhSfahhSfahhSfahhSfahhSfahhSfahhSfeahhSfahhSfahhSfahhSfahhSfahhSfahhSfddhlafhSfahhYhSfahhSfachSfSfYhYhYhYhafjYhYcYhYheehfSfSfakiSfSfWhiYceifecihUhcefchhYfYfcffUhdkhhYfYfYfYfekehUhSheffhYhUfYfYfYfYfUhYiYfafeUhShYjYfYfejieYfYfefehYhYhchhYfYfchhYhcdfWhfahhehhfYhchdUfShUhShWfhUfeaieUfWhhWfhUffmhffUfcahUfXiehUfehhjYhYhYhYhedhfYhYhYhaheShShWieUfShfccfhUhcifUhfbciZYoSfchfUfcfhUffechdacfekhhacfYhUfaihUhaeeYfchfYffjejoYhdfiYYhUfYffkmdjYfUfYheWhjYhUfYfdhflYffkcdYYfahfYfVfoYhShYfajkYhdfhYYhefifYhfikcoYhUfYfeXflYhdfibYhUfYfeiifYf:A7/fhkihSfYeShaffShaffShVijSfahhSfahhSfahhYhSfffehdSfVijddfeYhYiYhachYhYiYhbeflThbdeiiSfahhSfahhSfahhSfYhShcbhSfahhSfahhSfahhSfahhSfahhSfahhSfeahhSfahhSfahhSfahhSfahhSfahhSfahhSfddhlafhSfahhYhSfahhSfachSfSfYhYhYhYhafjYhYcYhYheehfSfSfakiSfSfWhiYceifecihUhcefchhYfYfcffUhdkhhYfYfYfYfekehUhSheffhYhUfYfYfYfYfUhYiYfafeUhShYjYfYfejieYfYfefehYhYhchhYfYfchhYhcdfWhfahhehhfYhchdUfShUhShWfhUfeaieUfWhhWfhUffmhffUfcahUfXiehUfehhjYhYhYhYhedhfYhYhYhaheShShWieUfShfccfhUhcifUhfbciZYoSfchfUfcfhUffechdacfekhhacfYhUfaihUhaeeYfchfYffjejoYhdfiYYhUfYffkmdjYfUfYheWhjYhUfYfdhflYffkcdYYfdhfoYffjjjYYhfalejeffhUffqfflaWhdhibUfVflaofdbcYYfakhYfdhfoYfaefYfenlfYf">Смотреть
+                        демо анимации.</a></p> -->
+            </div>
+        </div>
+        <!-- <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Понятно!</button>
+        </div> -->
+    </div>
+    <div id="share" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Загрузить на IMGUR</h3>
+            <p>(Необходимо разрешить всплывающие окна с сайта malovato.net)</p>
+        </div>
+        <div class="modal-body">
+            <div class="control-group">
+                <input type="text" class="login-field name" value="" placeholder="Название (не обязательно)"
+                    id="login-name">
+            </div>
+            <div class="control-group">
+                <input type="text" class="login-field author" value="" placeholder="Автор (не обязательно)"
+                    id="login-pass">
+            </div>
+            <div class="share-form"></div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-cancel" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+        </div>
+    </div>
+    <div id="browse" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Последние творения</h3>
+        </div>
+        <div class="modal-body">
+            <div class="demo-browser-content">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/flatui-deps.js"></script>
+    <script type="text/javascript" src="colorpicker/js/bootstrap-colorpicker.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
+    <div><canvas width="300" height="657" style="width: 300px; height: 657px;"></canvas>
+	</div>
+</body>
+
+</html>
